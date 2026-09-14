@@ -1,0 +1,32 @@
+{
+  "scheme_name": "Foreign Manufacturers Certification Scheme (FMCS)",
+  "description": "Certification for overseas manufacturers wishing to export products to India with the ISI Mark.",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Appoint AIR",
+      "description": "Appoint an Authorized Indian Representative (AIR) who is an Indian resident and will be responsible for compliance in India."
+    },
+    {
+      "step": 2,
+      "title": "Application Submission",
+      "description": "Submit the application offline or online at the FMCS portal with all manufacturing details, AIR nomination, and requisite fee."
+    },
+    {
+      "step": 3,
+      "title": "Application Scrutiny & Factory Inspection",
+      "description": "BIS scrutinizes the application and schedules an audit. A BIS officer travels to the overseas factory to evaluate manufacturing and testing capabilities."
+    },
+    {
+      "step": 4,
+      "title": "Independent Testing",
+      "description": "During the audit, the BIS officer draws a sample which must be sent to a BIS recognized lab in India for independent testing."
+    },
+    {
+      "step": 5,
+      "title": "Licence Grant",
+      "description": "Once the independent test report is compliant and the factory audit report is satisfactory, the FMCS licence is granted to the foreign manufacturer."
+    }
+  ],
+  "portal_url": "https://www.bis.gov.in/index.php/fmcs/"
+}

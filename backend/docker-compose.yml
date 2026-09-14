@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_bis
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      # Mount the existing qdrant data folder directly so no re-ingestion is needed
+      - ./data/qdrant_storage:/qdrant/storage
+    restart: always

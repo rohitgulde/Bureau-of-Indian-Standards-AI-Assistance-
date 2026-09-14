@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+langchain
+langchain-core
+langchain-google-genai
+qdrant-client[local]
+pymupdf
+pdfplumber
+google-genai
+python-multipart
+python-dotenv
+httpx
+tqdm
+

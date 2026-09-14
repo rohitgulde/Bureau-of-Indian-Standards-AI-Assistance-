@@ -1,0 +1,39 @@
+# Virtual Environments
+venv/
+env/
+.env/
+.venv/
+
+# Environment Variables (CRITICAL: Do not expose API keys or secrets)
+.env
+.env.local
+.env.*.local
+
+# Node/Frontend
+node_modules/
+.next/
+build/
+dist/
+out/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Databases
+*.sqlite3
+*.db
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp

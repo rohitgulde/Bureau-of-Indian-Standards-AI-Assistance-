@@ -1,0 +1,32 @@
+{
+  "scheme_name": "Compulsory Registration Scheme (CRS)",
+  "description": "Simplified registration scheme primarily for IT and electronic products.",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Product Testing",
+      "description": "Submit a sample of your product to any BIS recognized lab. The lab must test it according to the Indian Standard."
+    },
+    {
+      "step": 2,
+      "title": "Test Report Generation",
+      "description": "Obtain the official test report from the BIS recognized laboratory. This report is valid for 90 days."
+    },
+    {
+      "step": 3,
+      "title": "Online Registration",
+      "description": "Create an account on the CRS portal, fill in the product details, and upload the test report along with brand authorization and business licenses."
+    },
+    {
+      "step": 4,
+      "title": "Affidavit & Undertaking",
+      "description": "Submit the physical or digitally signed affidavit and undertaking as prescribed by BIS."
+    },
+    {
+      "step": 5,
+      "title": "Grant of Registration",
+      "description": "BIS scrutinizes the application and test report. Upon approval, a Registration Number is granted which must be displayed on the product (Standard Mark)."
+    }
+  ],
+  "portal_url": "https://www.crsbis.in"
+}

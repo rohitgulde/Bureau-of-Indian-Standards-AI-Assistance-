@@ -1,0 +1,32 @@
+{
+  "scheme_name": "ISI Mark Certification (Domestic)",
+  "description": "Standard BIS certification for domestic manufacturers. Includes factory audit and testing.",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Preparation & Testing",
+      "description": "Ensure your manufacturing premises has the required testing equipment and personnel as per the Scheme of Inspection and Testing (SIT). Optionally, get your product tested in a BIS recognized lab."
+    },
+    {
+      "step": 2,
+      "title": "Online Application",
+      "description": "Register on the Manak Online portal (www.manakonline.in), fill out the application form, and upload required documents (factory incorporation, list of machinery, layout plan)."
+    },
+    {
+      "step": 3,
+      "title": "Fee Payment",
+      "description": "Pay the application fee and preliminary inspection fee online through the portal."
+    },
+    {
+      "step": 4,
+      "title": "Factory Audit & Sample Collection",
+      "description": "A BIS officer visits the factory, verifies the manufacturing and testing infrastructure, and draws random samples for independent lab testing."
+    },
+    {
+      "step": 5,
+      "title": "Grant of Licence",
+      "description": "Once the independent lab test report is satisfactory and all discrepancies are closed, the licence is granted, and you can apply the ISI mark."
+    }
+  ],
+  "portal_url": "https://www.manakonline.in"
+}

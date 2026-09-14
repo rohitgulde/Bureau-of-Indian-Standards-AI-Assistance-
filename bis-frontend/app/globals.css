@@ -1,0 +1,172 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts ─────────────────────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* Government portal utility classes */
+  .gov-gradient {
+    @apply bg-gradient-to-r from-gov-navy-800 to-gov-navy-600;
+  }
+  .gov-gradient-subtle {
+    @apply bg-gradient-to-br from-gov-slate-50 to-gov-slate-100;
+  }
+  .gov-card {
+    @apply rounded-xl border border-border bg-card shadow-gov-sm transition-shadow hover:shadow-gov-md;
+  }
+  .gov-badge-navy {
+    @apply inline-flex items-center gap-1 rounded-full bg-gov-navy-800/10 px-2.5 py-0.5 text-xs font-medium text-gov-navy-800;
+  }
+  .gov-badge-orange {
+    @apply inline-flex items-center gap-1 rounded-full bg-gov-orange-600/10 px-2.5 py-0.5 text-xs font-medium text-gov-orange-600;
+  }
+  .gov-focus {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-gov-navy-800/60 focus-visible:ring-offset-2;
+  }
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 25%,
+      hsl(var(--muted) / 0.6) 50%,
+      hsl(var(--muted)) 75%
+    );
+    background-size: 200% 100%;
+    @apply animate-shimmer;
+  }
+}
+
+@layer base {
+  .theme {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+  }
+
+  /* ── Light mode — Ruby & Crimson ──────────────────────────────────────── */
+  :root {
+    /* Page - Clean stark white for high contrast */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    /* Card / Popover */
+    --card:            0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover:         0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary  → Striking Crimson/Ruby */
+    --primary:          348 83% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary → light rose/grey */
+    --secondary:          340 20% 96%;
+    --secondary-foreground: 348 83% 20%;
+
+    /* Muted */
+    --muted:            0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent → Rose Gold */
+    --accent:           15 70% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive:      0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders / Inputs */
+    --border: 0 0% 90%;
+    --input:  0 0% 90%;
+    --ring:   348 83% 47%;
+
+    /* Charts */
+    --chart-1: 348 83% 47%;
+    --chart-2: 15  70% 60%;
+    --chart-3: 340 60% 40%;
+    --chart-4: 0   90% 60%;
+    --chart-5: 350 40% 50%;
+
+    /* Border radius */
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar:                  0 0% 100%;
+    --sidebar-foreground:       0 0% 10%;
+    --sidebar-primary:          348 83% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent:           340 20% 96%;
+    --sidebar-accent-foreground: 348 83% 20%;
+    --sidebar-border:           0 0% 90%;
+    --sidebar-ring:             348 83% 47%;
+  }
+
+  /* ── Dark mode — Ruby & Crimson ───────────────────────────────────────────── */
+  .dark {
+    /* Premium Deep Black Background */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card:            0 0% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover:         0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary in Dark Mode → Bright Ruby */
+    --primary:          348 90% 55%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary:        340 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted:            0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent:           15 80% 65%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive:      0 70% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input:  0 0% 15%;
+    --ring:   348 90% 55%;
+
+    /* Charts */
+    --chart-1: 348 90% 55%;
+    --chart-2: 15  80% 65%;
+    --chart-3: 340 60% 45%;
+    --chart-4: 0   90% 65%;
+    --chart-5: 350 40% 60%;
+
+    --sidebar:                  0 0% 4%;
+    --sidebar-foreground:       0 0% 98%;
+    --sidebar-primary:          348 90% 55%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent:           340 20% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border:           0 0% 15%;
+    --sidebar-ring:             348 90% 55%;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  html {
+    @apply font-sans scroll-smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  a {
+    @apply transition-colors;
+  }
+}
