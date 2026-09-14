@@ -5,7 +5,7 @@ A full-stack application with a **FastAPI** backend and a **Next.js** frontend.
 ## Project Structure
 
 \\\
-sih/
+BIS AI ASSISTANT/
 +-- backend/          # FastAPI Python backend
 ¦   +-- venv/         # Python virtual environment
 ¦   +-- main.py       # FastAPI application entry point
@@ -16,7 +16,7 @@ sih/
 
 ## Backend Setup
 
-\\\ash
+\\\bash
 cd backend
 venv\Scripts\activate      # Windows
 pip install -r requirements.txt
@@ -28,7 +28,7 @@ Swagger docs at: http://localhost:8000/docs
 
 ## Frontend Setup
 
-\\\ash
+\\\bash
 cd frontend
 npm install
 npm run dev
