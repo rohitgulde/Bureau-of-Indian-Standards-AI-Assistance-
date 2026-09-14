@@ -1,4 +1,4 @@
-# SIH Project
+# RAG powered BIS AI assistant
 
 A full-stack application with a **FastAPI** backend and a **Next.js** frontend.
 
@@ -7,9 +7,9 @@ A full-stack application with a **FastAPI** backend and a **Next.js** frontend.
 \\\
 sih/
 +-- backend/          # FastAPI Python backend
-¦   +-- venv/         # Python virtual environment
-¦   +-- main.py       # FastAPI application entry point
-¦   +-- requirements.txt
+Â¦   +-- venv/         # Python virtual environment
+Â¦   +-- main.py       # FastAPI application entry point
+Â¦   +-- requirements.txt
 +-- frontend/         # Next.js frontend with Tailwind CSS
 +-- data/             # Directory for storing PDF files
 \\\
